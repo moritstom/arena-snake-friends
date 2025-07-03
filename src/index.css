@@ -2,41 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Game-inspired design system with vibrant colors and smooth animations */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Game background - deep space theme */
+    --background: 220 30% 8%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* UI Components */
+    --card: 220 25% 12%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 220 25% 12%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Game primary colors - electric blue */
+    --primary: 200 100% 50%;
+    --primary-foreground: 220 30% 8%;
+    --primary-glow: 200 100% 70%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Game secondary - neon green */
+    --secondary: 120 100% 50%;
+    --secondary-foreground: 220 30% 8%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Accent colors for UI */
+    --muted: 220 20% 20%;
+    --muted-foreground: 210 20% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 280 100% 60%;
+    --accent-foreground: 210 40% 98%;
 
-    --destructive: 0 84.2% 60.2%;
+    /* Game danger - bright red */
+    --destructive: 0 100% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* UI borders and inputs */
+    --border: 220 20% 25%;
+    --input: 220 20% 18%;
+    --ring: 200 100% 50%;
 
-    --radius: 0.5rem;
+    /* Game-specific colors */
+    --game-pellet: 60 100% 60%;
+    --game-snake-1: 200 100% 50%;
+    --game-snake-2: 120 100% 50%;
+    --game-snake-3: 280 100% 60%;
+    --game-snake-4: 0 100% 60%;
+    --game-snake-5: 30 100% 60%;
+    --game-snake-6: 180 100% 50%;
+    --game-arena: 220 30% 12%;
+
+    /* Smooth animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    /* Glowing effects */
+    --glow-primary: 0 0 20px hsl(var(--primary) / 0.5);
+    --glow-secondary: 0 0 20px hsl(var(--secondary) / 0.5);
+    --glow-accent: 0 0 20px hsl(var(--accent) / 0.5);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
